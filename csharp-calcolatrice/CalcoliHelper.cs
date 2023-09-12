@@ -40,7 +40,7 @@ namespace csharp_calcolatrice
         {
             return Math.Abs(valore);
         }
-        public static double valoraAssoluto(double valore)
+        public static double valoreAssoluto(double valore)
         {
             return Math.Abs(valore);
         }
@@ -111,11 +111,15 @@ namespace csharp_calcolatrice
             }
         }
 
-        public static long elevazionePotenza(int baseElevazione, int esponente)
+        public static double elevazionePotenza(int baseElevazione, int esponente)
         {
+
             if(esponente == 0)
             {
                 return 1;
+            }else if(esponente < 0)
+            { 
+                return (double)1 / baseElevazione * elevazionePotenza(baseElevazione, esponente + 1);
             }else
             {
                 return baseElevazione * elevazionePotenza(baseElevazione, esponente - 1);
