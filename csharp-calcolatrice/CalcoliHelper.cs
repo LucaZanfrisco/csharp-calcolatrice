@@ -15,7 +15,7 @@ namespace csharp_calcolatrice
         }
         public static double somma(double addendo1, double addendo2)
         {
-            return addendo1 + addendo2;
+            return Math.Round(addendo1 + addendo2,2);
         }
 
         public static int differenza(int minuendo, int sottraendo)
@@ -33,7 +33,7 @@ namespace csharp_calcolatrice
         }
         public static double moltiplicazione(double moltiplicando, double moltiplicatore)
         {
-            return moltiplicando * moltiplicatore;
+            return Math.Round(moltiplicando * moltiplicatore,2);
         }
 
         public static int valoreAssoluto(int valore)
@@ -111,7 +111,7 @@ namespace csharp_calcolatrice
             }
         }
 
-        public static int elevazionePotenza(int baseElevazione, int esponente)
+        public static long elevazionePotenza(int baseElevazione, int esponente)
         {
             if(esponente == 0)
             {

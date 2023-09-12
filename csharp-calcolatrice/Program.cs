@@ -3,8 +3,8 @@
 using csharp_calcolatrice;
 
 Console.WriteLine("Somma:");
-Console.WriteLine(CalcoliHelper.somma(10, 56));
-Console.WriteLine(CalcoliHelper.somma(23.3, 45.4));
+Console.WriteLine(CalcoliHelper.somma(23,45));
+Console.WriteLine(CalcoliHelper.somma(23.4, 45.3));
 Console.WriteLine("------------------------------\n");
 
 Console.WriteLine("Differenza:");
@@ -33,5 +33,5 @@ Console.WriteLine(CalcoliHelper.valoreMassimo(23.7, 45.9));
 Console.WriteLine("------------------------------\n");
 
 Console.WriteLine("Elevazione a potenza: ");
-Console.WriteLine(CalcoliHelper.elevazionePotenza(2, 3));
+Console.WriteLine(CalcoliHelper.elevazionePotenza(2, 15));
 Console.WriteLine("------------------------------\n");
